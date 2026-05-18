@@ -1,0 +1,58 @@
+ssh-keygen
+cat $HOME/.ssh/*.pub
+mkdir repogit
+cd repogit
+git clone git@github.com:tizianovalentinborquez912/TP_AySO.git
+cd TP_AySO/
+git clone git@github.com:tizianovalentinborquez912/TP_AySO.git
+cat /etc/passwd
+man grep
+grep -i Ubuntu /etc/passwd
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git config --global user.email "tizianovalentinborquez@gmail.com"
+git config --global user.name "tiziano valentin borquez"
+git add datos_usuario.txt
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git add datos_usuario.txt
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git add TP_AySO/, txt
+git add datos_usuario.txt
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuario.txt
+cat datos_usuario.txt
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git push
+cat /proc
+/proc
+grep "model name" /proc/cpuinfo | head -n1 > info_pc.txt
+git add info_pc.txt
+git commit -m "feat: Añadiendo información de CPU"
+git push
+cat <<EOF >> README.md
+Alumno: Tiziano Borquez
+División: 115
+Turno: Mañana
+EOF
+
+cat TP_AySO/
+ls
+cat info_pc.txt
+cat README.md
+git add README.md
+git push
+git add .
+git commit -m "docs: agregado datos del alumno"
+git push
+cd 
+mkdir -p TP1/{arquitectura/Clase{1,2,3,4,5},so/Clase{1,2,3,4,5,6}}
+tree TP1
+cd ~/repogit/TP_AySO/
+echo 'mkdir -p TP1/{arquitectura/Clase{1,2,3,4,5},so/Clase{1,2,3,4,5,6}}' > script_dir.sh
+chmod +x script_dir.sh
+git add script_dir.sh
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
